@@ -1,0 +1,116 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: #0a1f44;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: gold;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.8)), url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.btn {
+  padding: 10px 20px;
+  background: gold;
+  color: #0a1f44;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Section Styling */
+section {
+  padding: 80px 50px;
+  text-align: center;
+}
+.services .service-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.service-card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: scale(1.05);
+  background: #eaeaea;
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  gap: 10px;
+}
+.contact input, .contact textarea, .contact button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact button {
+  background: #0a1f44;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.contact button:hover {
+  background: gold;
+  color: #0a1f44;
+}
+
+/* Footer */
+footer {
+  background: #0a1f44;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
